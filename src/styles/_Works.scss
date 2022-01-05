@@ -1,0 +1,165 @@
+
+   div.singleWork:nth-child(even){
+       flex-direction: row-reverse;
+   }
+
+.works{
+    animation: load 1s ease 1;
+    padding-bottom: 50px;
+    
+    .intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70vw;
+        margin: auto;
+        min-height: 100vh;
+        
+        h3{
+            font-size: 16px;
+            color: $gray;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 5px;
+        }
+
+        .main{
+            font-size: 50px;
+            font-weight: 700;
+            color: black;
+        }
+
+        p{
+            font-size: 28px;
+            color: $gray;
+            text-align: center;
+            font-weight: 500;
+
+        }
+        
+    }
+}
+
+@media screen and (max-width: 1536px) {
+
+    .works{
+        
+        
+        .intro{
+            
+            h3{
+                margin-top: 20vh;
+                font-size: 14px;
+            }
+    
+            .main{
+                font-size: 35px;
+            }
+    
+            p{
+                font-size: 20px;
+            }
+            
+        }
+    }
+    
+}
+
+@media screen and (max-width: 830px) and (orientation: landscape) {
+    .works{
+        
+        
+        .intro{
+            
+            
+            h3{
+                font-size: 14px;
+            }
+    
+            .main{
+                font-size: 22px;
+            }
+    
+            p{
+                font-size: 18px;
+            }
+            
+        }
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+
+    div.singleWork:nth-child(even){
+        flex-direction: column;
+    }
+    
+    .works{
+      
+        
+        .intro{
+            width: 90vw;
+            padding-top: 5vh;
+            
+            h3{
+                font-size: 16px;
+            }
+        
+    
+            .main{
+                font-size: 25px;
+                margin: 0 0 20px 0;
+            }
+    
+            p{
+                font-size: 18px;
+            }
+            
+        }
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    
+    .works{
+      
+        
+        .intro{
+            width: 90vw;
+            // padding-top: 20vh;
+            
+            h3{
+                font-size: 14px;
+            }
+        
+    
+            .main{
+                font-size: 20px;
+                margin: 0 0 20px 0;
+            }
+    
+            p{
+                font-size: 16px;
+            }
+            
+        }
+    }
+
+}
+
+
+
+
+@keyframes load {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}

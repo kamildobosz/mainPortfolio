@@ -1,0 +1,171 @@
+.loadingPage{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    padding: 5vh 5vh 0 5vh;
+    margin-top: -100vh;
+    background-color: $bgc;
+    animation: loading 1.8s linear 1;
+    z-index: 1000;
+
+    .logo{
+        position: fixed;
+        top: 5vh;
+        left: 5vh;
+        display: flex;
+        color: $gray;
+        .material-icons{
+            font-size: 45px;
+            margin-right: 10px;
+        }
+        .description{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .name{
+                font-size: 23px;
+                font-weight: bold;
+            }
+            .profession{
+                font-size: 10px;
+                color: $gray;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-weight: 500;
+            }
+        }
+    }
+    .spiner{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .desc{
+        position: absolute;
+        left: 5vw;
+        bottom: 5vw;
+        color: $grayHover;
+        opacity: 0;
+        animation: show 1.7s ease 1 ;
+
+        h3{
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        h2{
+            font-size: 70px;
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 830px) and (orientation: landscape) {
+.loadingPage{
+    .desc{
+        h2{
+            font-size: 50px;
+        }
+    }
+}    
+}
+
+
+
+@media screen and(max-width: 480px){
+
+    .loadingPage{
+        
+    
+        .logo{
+            
+            top: 3vh;
+            left: 5vh;
+           
+            .description{
+    
+                .name{
+                    font-size: 22px;
+                }
+                .profession{
+                    font-size: 9px;
+                }
+            }
+        }
+        
+        .desc{
+    
+            h3{
+                font-size: 18px;
+                
+            }
+    
+            h2{
+                font-size: 45px;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width:320px) {
+    
+.loadingPage{
+.logo{
+    .material-icons{
+        display: none;
+    }
+}
+
+}
+
+}
+
+@keyframes show {
+
+    0%{
+        opacity: 0;
+        bottom: 2vw;
+    }
+
+    35%{
+        opacity: 1;
+        bottom: 5vw;
+    }
+    65%{
+        opacity: 1;
+        bottom: 5vw;
+    }
+
+    100%{
+        opacity: 0;
+        bottom: 8vw
+    }
+    
+}
+
+@keyframes loading {
+    0%{
+        margin-top:  0 ;
+    }
+
+    20%{
+        margin-top: 0;
+    }
+
+    80%{
+        margin-top: 0;
+    }
+
+    100%{
+        margin-top: -100vh;
+    }
+    
+}
+

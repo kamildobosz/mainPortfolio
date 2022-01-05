@@ -1,0 +1,15 @@
+.footer{
+    position: absolute;
+    bottom: 5vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    height: 5vh;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    z-index: 2;
+    p{
+        color: $gray;
+        line-height: 5vh;
+    }
+}

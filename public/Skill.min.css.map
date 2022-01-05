@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../src/styles/Skill.scss"
+    ],
+    "names": [],
+    "file": "Skill.min.css"
+}

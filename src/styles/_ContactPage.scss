@@ -1,0 +1,249 @@
+
+.contactPage{
+    min-height:100vh;
+    display: flex;
+    padding: 0 15vw;
+    overflow: hidden;
+    .left{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        animation: fromTop 1s ease 1;
+
+        h2{
+            font-size: 50px;
+            text-shadow: black;
+        }
+        .name, .phone, .email{
+            width: 100%;
+            display: flex;
+            align-items: center;
+        h3{
+            padding: 5px;
+            font-size: 25px;
+        }
+    }
+    }
+    .right{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: fromRight 1s ease 1;
+        form{
+            display: flex;
+            flex-wrap: wrap;
+            input{
+                
+                    width: 40%;
+                    height: 50px;
+                    border: 1px solid $gray;
+                    margin: 10px;
+                    font-size: 14px;
+                    padding-left: 10px;
+                    border-radius: 5px;
+                    -webkit-appearance: none;
+            }
+
+            input[type='number'] {
+                -moz-appearance:textfield;
+            }
+            
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+            textarea{
+                width: calc(80% + 20px);
+                margin: 10px;
+                font-size: 14px;
+                padding: 20px;
+                border: 1px solid $gray;
+                border-radius: 5px;
+            }
+            button{
+                margin: 10px;
+                border: none;
+                width: calc(80% + 20px);
+                padding: 15px 25px;
+                font-size: 15px;
+                background-color:rgb(175, 175, 175);
+                color: #fff;
+                font-weight: 500;
+                cursor: pointer;
+                transition: .3s;
+                border-radius:5px;
+                letter-spacing: 2px;
+                &:hover{
+                    background-color: $gray;
+                }
+            }
+        }
+        
+    }
+
+    .done{
+        text-align: center;
+        margin: 10px;
+        width: calc(80% + 20px);
+        padding: 15px 25px;
+        font-size: 25px;
+        color: black;
+        font-weight: 600;
+    }
+}
+
+
+
+@media screen and (max-width:1536px) {
+    
+    .contactPage{
+        
+        .left{
+            
+    
+            h2{
+                font-size: 45px;
+               
+            }
+            .name, .phone, .email{
+               
+            h3{
+               
+                font-size: 19px;
+            }
+        }
+        }      
+        }
+
+}
+
+
+@media screen and (max-width:830px) and (orientation:landscape) {
+    .contactPage{
+        padding: 15vh;
+        .left{
+            justify-content: flex-start;
+            animation: none;
+            padding-top: 0vh;
+           
+            h2{
+                font-size: 30px;
+            }
+            .name, .phone, .email{
+            h3{
+                margin: 5px;
+                font-size: 20px;
+            }
+        }
+        }
+        .right{
+            animation: none;
+            form{
+                width: 100%;
+                input{
+                    
+                        width: 100%;
+                        height: 30px;
+                        margin: 5px 0;                      
+                }
+    
+                textarea{
+                    width: 100%;
+                    margin: 10px 0;
+                    padding: 10px;
+                   
+                }
+                button{
+                    margin: 10px 0 80px 0;
+                    width: 100%;
+                    padding: 15px 25px;
+                
+                }
+            }
+            
+        }
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .contactPage{
+        flex-direction: column;
+        padding: 0 5vw;
+        .left{
+
+            animation: none;
+
+            padding-top: 15vh;
+           
+            h2{
+                font-size: 30px;
+            }
+            .name, .phone, .email{
+            h3{
+                margin: 5px;
+                font-size: 20px;
+            }
+        }
+        }
+        .right{
+            animation: none;
+            form{
+                width: 100%;
+                input{
+                    
+                        width: 100%;
+                        height: 40px;
+                        margin: 10px 0;                      
+                }
+    
+                textarea{
+                    width: 100%;
+                    margin: 10px 0;
+                    padding: 10px;
+                   
+                }
+                button{
+                    margin: 10px 0 80px 0;
+                    width: 100%;
+                    padding: 15px 25px;
+                
+                }
+            }
+            
+        }
+    }
+    
+   
+}
+
+
+
+
+
+@keyframes fromRight {
+
+    0%{
+        margin-right: -100vw;
+    }
+
+    100%{
+        margin-right: 0;
+    }
+    
+}
+
+@keyframes fromTop{
+    0%{
+        margin-top: -100vh
+    }
+
+    100%{
+        margin-top: 0;
+    }
+}
