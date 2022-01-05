@@ -19,8 +19,8 @@ const works = [
         title: 'Portfolio',
         img: portfolio,
         desc: "Wizytówka, którą właśnie przeglądasz. Powstała, aby pomóc mi w poszukiwaniu pierwszej pracy. W jej tworzeniu wykorzystałem przede wszystkim React.js oraz SCSS. Oprócz tego użyłem chociażby react-router oraz bibliotekę AOS do animowania elementów. ",
-        live: 'https://www.instagram.com/',
-        code: 'https://github.com/'
+        live: 'https://portfoliodobosz.pl/',
+        code: 'https://github.com/kamildobosz/mainPortfolio'
 
 },
 { 
